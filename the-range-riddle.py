@@ -11,9 +11,20 @@ import random
 emotions = ["Happy", "Sad", "Excited", "Lethargic", "Scared", "Optimistic", "Tired", "Depressed", "Silly", "Playful"]
 days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
-
+#days at random
 for day in range(len(days)):
     random_day = random.randint(0,len(days)-1)
     for emotion in range(len(emotions)):
         random_emotion = random.randint(0, len(emotions)-1)
     print("Today is " + days[random_day] + ", I'm feeling " + emotions[random_emotion])
+
+
+print("-----------------------------------------------------------------------------------------------")
+
+#days in order
+for day in range(len(days)):
+    #random_day = random.randint(0,len(days)-1)
+    for emotion in range(len(emotions)):
+        random_emotion = random.randint(0, len(emotions)-1)
+    print("Today is " + days[day] + ", I'm feeling " + emotions[random_emotion])
+
